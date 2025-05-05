@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaChevronDown } from 'react-icons/fa'
 
 const FilterDropdown = () => {
   const [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ const FilterDropdown = () => {
         onClick={() => setOpen(!open)}
         className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-100"
       >
-        Filters
+        Beds & Baths <FaChevronDown size={14} />
       </button>
 
       {open && (

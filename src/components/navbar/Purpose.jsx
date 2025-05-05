@@ -7,7 +7,7 @@ const Purpose = () => {
 
   const toggleDropdown = () => setIsOpen(!isOpen)
 
-  const handleSelect = (option: string) => setSelected(option)
+  const handleSelect = (option) => setSelected(option)
 
   const handleReset = () => setSelected('Buy')
 

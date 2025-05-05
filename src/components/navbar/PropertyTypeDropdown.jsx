@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaChevronDown } from 'react-icons/fa'
 
 const PropertyTypeDropdown = () => {
   const [open, setOpen] = useState(false)
@@ -24,9 +25,9 @@ const PropertyTypeDropdown = () => {
     <div className='relative inline-block text-left'>
       <button
         onClick={() => setOpen(!open)}
-        className='px-4 py-2 bg-white border rounded shadow'
+        className='px-4 py-2 bg-white border rounded shadow flex items-center gap-2'
       >
-        Property Type
+        Property Type <FaChevronDown size={14} />
       </button>
 
       {open && (

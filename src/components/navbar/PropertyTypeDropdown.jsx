@@ -25,7 +25,7 @@ const PropertyTypeDropdown = () => {
     <div className='relative inline-block text-left'>
       <button
         onClick={() => setOpen(!open)}
-        className='px-4 py-2 bg-white border rounded shadow flex items-center gap-2'
+        className='px-4 py-2 bg-white border rounded shadow flex items-center gap-2 hover:bg-gray-100'
       >
         Property Type <FaChevronDown size={14} />
       </button>
